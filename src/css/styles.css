@@ -1,0 +1,122 @@
+/***---RESET AND VARIABLES---***/
+:root {
+  /*colours*/
+  --primary-dark: #333;
+  --secondary-dark: #a7a7a7;
+  --primary-light: #ededed;
+  --secondary-light: #fafafa;
+  --accent-dark: #2563eb;
+  --accent-light: #93c5fd;
+  --red: hsl(0, 100%, 80%);
+  --green: hsl(128, 100%, 80%);
+  --blue: hsl(194, 100%, 80%);
+
+  /*spacing*/
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /*misc*/
+  --border-radius: 8px;
+  --shadow: 0px 1px 2px rgba(0, 0, 0, 0.14);
+
+  /***---FLUID RESPONSIVITY--- ***/
+  /* Calculator here ---> https://utopia.fyi/ */
+
+  /*Font Sizing*/
+  --fs-200: clamp(0.63rem, calc(0.82rem + -0.16vw), 0.79rem);
+  --fs-300: clamp(0.75rem, calc(0.9rem + 0.04vw), 0.95rem);
+  --fs-400: clamp(0.9rem, calc(0.98rem + 0.13vw), 1.13rem);
+  --fs-500: clamp(1.13rem, calc(1.05rem + 0.37vw), 1.5rem);
+  --fs-600: clamp(1.27rem, calc(1.12rem + 0.73vw), 2rem);
+  --fs-700: clamp(1.42rem, calc(1.18rem + 1.24vw), 2.66rem);
+  --fs-800: clamp(1.6rem, calc(1.21rem + 1.95vw), 3.55rem);
+  --fs-900: clamp(1.8rem, calc(1.22rem + 2.93vw), 4.74rem);
+
+  /*Spacing*/
+  /* One-up pairs */
+  --spc-100: clamp(0.25rem, calc(0.19rem + 0.31vw), 0.56rem);
+  --spc-200: clamp(0.5rem, calc(0.43rem + 0.38vw), 0.88rem);
+  --spc-300: clamp(0.75rem, calc(0.68rem + 0.38vw), 1.13rem);
+  --spc-400: clamp(1rem, calc(0.86rem + 0.69vw), 1.69rem);
+  --spc-500: clamp(1.5rem, calc(1.35rem + 0.75vw), 2.25rem);
+  --spc-600: clamp(2rem, calc(1.73rem + 1.38vw), 3.38rem);
+  --spc-700: clamp(3rem, calc(2.7rem + 1.5vw), 4.5rem);
+  --spc-800: clamp(4rem, calc(3.45rem + 2.75vw), 6.75rem);
+}
+
+/***---UTILITIES---***/
+
+/***---MISC---***/
+
+body {
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/***---HEADER---***/
+
+.main-heading {
+  display: flex;
+  height: 10dvh;
+
+  color: var(--primary-light);
+  background-color: var(--primary-dark);
+}
+
+#page-title {
+  margin-right: auto;
+}
+#main-nav {
+  display: flex;
+
+  color: var(--accent-dark);
+}
+
+/***---MAIN---***/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/***---FOOTER---***/
+
+body {
+  /* footer support */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: var(--spacing-xs);
+  padding-top: var(--spacing-xl);
+}
+
+#copyright {
+  font-size: 1.24rem;
+  font-weight: 700;
+  text-decoration-line: none;
+  letter-spacing: 0.5px;
+  color: var(--secondary-dark);
+}
+
+.fa-github {
+  font-size: 1.38rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
