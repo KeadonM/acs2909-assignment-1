@@ -70,7 +70,7 @@ a:hover {
   display: flex;
   align-items: center;
 
-  height: 10dvh;
+  max-height: 15vh;
   padding-block: var(--spc-500);
   padding-inline: var(--spc-400);
 
