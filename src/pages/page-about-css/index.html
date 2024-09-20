@@ -25,6 +25,9 @@
           <li>
             <a href="../page-about-html/index.html">HTML</a>
           </li>
+          <li>
+            <a href="../../A1/page_about_css.html">Raw</a>
+          </li>
           <li id="hub-link">
             <a href="https://acs2909.keadon.dev">ACS2909 Hub</a>
           </li>
@@ -58,16 +61,22 @@
         </p>
 
         <h3>The Box Model</h3>
+        <div id="margin_box" class="box_model">
+          <div id="border_box" class="box_model">
+            <div id="padding_box" class="box_model">
+              <div id="content_box" class="box_model">Content</div>
+              Padding
+            </div>
+            Border
+          </div>
+          Margin
+        </div>
 
         <img src="../../images/css-is-awesome.jpg" />
       </article>
     </main>
     <footer>
       <a id="copyright" href="https://github.com/keadonm" target="_blank">
-        Copyright ©
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
         KeadonM
         <i class="fab fa-github"></i>
         <a id="code-link" href="https://github.com/KeadonM/acs2909-assignment-1"

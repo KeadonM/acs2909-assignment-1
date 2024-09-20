@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://www.lusciousorange.com/basic_reset.css"
+    />
+    <link rel="stylesheet" href="./A1.css" />
+  </head>
+  <body>
+    <!-- Our fixed header which contains our navigation -->
+    <div id="header">
+      <h1>CSS</h1>
+      <ul id="navigation">
+        <li><a href="./page_about_html.html">HTML</a></li>
+        <li><a href="./page_about_css.html">CSS</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <!-- Link to a more stylized version of the site  -->
+        <li>
+          <a
+            href="https://acs2909-assignment-1.keadon.dev/pages/page-about-css/index.html"
+            >Styled</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Our content container which contains the necessary content for the assignment -->
+    <div id="content_container">
+      <p>
+        <b>Cascading Style Sheets</b> (CSS) is a style sheet language used for
+        describing the presentation of a document written in a markup language
+        such as HTML or XML. CSS is a cornerstone technology of the World Wide
+        Web, alongside HTML and JavaScript.
+      </p>
+      <p>
+        CSS is designed to disable the separation of presentation and content,
+        including layout, colors, and fonts. This separation can improve content
+        accessibility; provide more flexibility and control in the specification
+        of presentation characteristics; enable multiple web pages to share
+        formatting by specifying the relevant CSS in a separate .css files,
+        which reduces complexity and repetition in the structural content; and
+        enable the .css file to be cached to improve the page speed between the
+        pages that share the file and its formatting.
+      </p>
+
+      <div id="margin_box" class="box_model">
+        <div id="border_box" class="box_model">
+          <div id="padding_box" class="box_model">
+            <div id="content_box" class="box_model">Content</div>
+            Padding
+          </div>
+          Border
+        </div>
+        Margin
+      </div>
+      <img src="./images/css-is-awesome.jpg" alt="CSS is awesome mug" />
+    </div>
+  </body>
+</html>

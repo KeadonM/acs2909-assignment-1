@@ -1,0 +1,115 @@
+/***---GENERAL STYLING---***/
+
+#content_container {
+  max-width: 600px;
+}
+
+img {
+  width: 50%;
+  margin-top: 20px;
+}
+
+#content_container :is(p, ul, h1, h2, h3, h4, h5, h6) {
+  /* Use the :is selector to select all elements needing bottom padding of 20px */
+  padding-bottom: 20px;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+}
+
+#content_container ol li {
+  padding-bottom: 10px;
+}
+
+body {
+  /* Set required body margin/padding */
+  margin: 20px;
+  padding-top: 80px;
+
+  /* We're told to apply a top padding of 60px to the body element and then 
+  later to apply padding ensuring the content starts 20px after the heading. 
+  60 + 20 = 80 so I set it to 80
+
+  4.  The body element should have a margin of 20px and a padding on top of 60px.
+  6.  Apply padding to the top of the <body> tag to ensure the content 
+      starts 20px after the header. */
+}
+
+/***---HEADER STYLING---***/
+
+#header {
+  width: 100vw; /* Use 100 view width to force header sizing */
+
+  position: fixed; /* Ensures header remains at the top of the page */
+  top: 0;
+  left: 0;
+
+  display: flex; /* Header element layout */
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: black;
+}
+
+#header h1,
+#navigation a {
+  color: white;
+}
+
+#navigation {
+  display: flex; /* Nav layout */
+  gap: 10px;
+  list-style-type: none; /* Remove list decorations */
+}
+
+#navigation a {
+  /* Set nav link border and padding */
+  border: 1px solid white;
+  padding: 5px;
+}
+
+#navigation a:hover {
+  /* Invert nav link colours on hover */
+  color: black;
+  background-color: white;
+}
+
+/***---CSS BOX MODEL---***/
+
+.box_model {
+  /* Set all shared styles for the box model diagram */
+  border: 1px solid black;
+  border-radius: 5px;
+
+  padding: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#margin_box {
+  background-color: #666666;
+}
+
+#border_box {
+  background-color: #999999;
+}
+
+#padding_box {
+  background-color: #bbbbbb;
+}
+
+#content_box {
+  padding-bottom: 30px; /* Extra padding for inner box */
+  background-color: #ffffff;
+}
+
+#content_box:hover {
+  /* Invert colours on hover */
+  color: #ffffff;
+  background-color: #000000;
+}

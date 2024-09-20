@@ -158,6 +158,46 @@ main > .section-block {
   font-weight: bold;
 }
 
+/***---CSS PAGE---***/
+
+h3 {
+  font-size: var(--fs-400);
+  font-weight: bold;
+  padding-bottom: var(--spc-200);
+}
+
+.box_model {
+  border: 1px solid black;
+  border-radius: 5px;
+
+  padding: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#margin_box {
+  background-color: #666666;
+}
+
+#border_box {
+  background-color: #999999;
+}
+
+#padding_box {
+  background-color: #bbbbbb;
+}
+
+#content_box {
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+
+#content_box:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 /***---FOOTER---***/
 
 footer {
